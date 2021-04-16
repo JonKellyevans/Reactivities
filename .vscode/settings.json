@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/06eb1b83-d771-4801-9d2e-72300b4f43c7/resourceGroups/DEVELOPMENT/providers/Microsoft.Web/sites/BuryStreetLighting",
+    "appService.deploySubpath": "."
+}
