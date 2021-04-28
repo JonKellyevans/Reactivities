@@ -1,5 +1,4 @@
 import { observer } from 'mobx-react-lite';
-import { clear } from 'node:console';
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Grid } from 'semantic-ui-react';
@@ -20,7 +19,7 @@ export default observer (function ActivityDetails()
     useEffect(() => {        
         if (id) loadActivity(id);
         return clearSelectedActivity();
-    }, [id, loadActivity]);
+    }, [id, loadActivity,clearSelectedActivity]);
 
     if (loadingInitial || !activity) return <LoadingComponent content='Loading Application' />;
 
